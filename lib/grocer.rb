@@ -25,11 +25,11 @@ def consolidate_cart(cart)
 
     # item hash or nil
     
-    if current_item == nil
+    if found_item_in_array == nil
       # base case, when no item of the name is found
       hash[:count] = 1
 
-      found_item_in_array << hash
+      new_cart << hash
     else
       found_item_in_array[:count] += 1
     end
