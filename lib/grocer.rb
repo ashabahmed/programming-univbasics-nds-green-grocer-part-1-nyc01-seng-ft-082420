@@ -21,6 +21,9 @@ def consolidate_cart(cart)
   new_cart = []
   binding.pry
   cart.each do |hash|
+    new_cart.each do |hash|
+      
+    end
     binding.pry
   end
   # Consult README for inputs and outputs
