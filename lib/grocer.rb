@@ -12,7 +12,7 @@ def find_item_by_name_in_collection(name, collection)
   # end
   # return nil
   
-  collection.find{|hash| hash[:item] == name}
+  collection.find do |hash| hash[:item] == name}
 end
 
 def consolidate_cart(cart)
