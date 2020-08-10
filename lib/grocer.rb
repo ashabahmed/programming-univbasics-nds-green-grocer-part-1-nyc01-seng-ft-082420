@@ -20,6 +20,7 @@ def consolidate_cart(cart)
     if find_item_by_name_in_collection(hash[:item], new_cart) == nil
       hash[:count] = 1
       new_cart << hash
+      binding.pry
     else
       
     end
