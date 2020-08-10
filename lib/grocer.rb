@@ -21,7 +21,7 @@ def consolidate_cart(cart)
   new_cart = []
 
   cart.each do |hash|
-    current_item = find_item_by_name_in_collection(hash[:item], new_cart)
+    find_item_in_array = find_item_by_name_in_collection(hash[:item], new_cart)
 
     # item hash or nil
     
