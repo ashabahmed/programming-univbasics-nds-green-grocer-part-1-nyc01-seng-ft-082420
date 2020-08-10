@@ -18,6 +18,11 @@ end
 
 # cart = [{:item => "KALE", :price => 3.00, :clearance => false}]
 def consolidate_cart(cart)
+  new_cart = []
+  binding.pry
+  cart.each do |hash|
+  
+  end
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
