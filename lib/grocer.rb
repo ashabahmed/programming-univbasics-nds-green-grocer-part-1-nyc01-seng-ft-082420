@@ -5,14 +5,14 @@ def find_item_by_name_in_collection(name, collection)
   #
   # Consult README for inputs and outputs
   
-  # collection.each do |hash|
-  #   if hash[:item] == name
-  #     return hash
-  #   end
-  # end
-  # return nil
+  collection.each do |hash|
+    if hash[:item] == name
+      return hash
+    end
+  end
+  return nil
   
-  collection.find{|hash| hash[:item] == name}
+  # collection.find{|hash| hash[:item] == name}
 end
 
 def consolidate_cart(cart)
