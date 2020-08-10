@@ -22,7 +22,12 @@ def consolidate_cart(cart)
   binding.pry
   cart.each do |hash|
     new_cart.each do |hash|
-      
+          if hash[:item] == name
+      return hash
+    end
+  end
+  return nil
+  
     end
     binding.pry
   end
