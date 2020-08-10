@@ -16,7 +16,7 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 
-cart = [{:item => "KALE", :price => 3.00, :clearance => false}]
+# cart = [{:item => "KALE", :price => 3.00, :clearance => false}]
 def consolidate_cart(cart)
   # Consult README for inputs and outputs
   #
