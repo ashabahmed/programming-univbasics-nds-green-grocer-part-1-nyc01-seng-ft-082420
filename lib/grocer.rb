@@ -17,17 +17,18 @@ def consolidate_cart(cart)
   new_cart = [{:item => "AVOCADO", :price => 3.00, :clearance => true, :count => 1},
     {:item => "KALE", :price => 3.00, :clearance => false, :count => 1}
   ]
+  
+  new_cart = []
 
   cart.each do |hash|
     current_item = find_item_by_name_in_collection(hash[:item], new_cart)
-    {:item => "AVOCADO", :price => 3.00, :clearance => true, :count => 1} || nil
+
     # item hash or nil
     
     if current_item == nil
       # base case, when no item of the name is found
-      {:item => "AVOCADO", :price => 3.00, :clearance => true}
       hash[:count] = 1
-      {:item => "AVOCADO", :price => 3.00, :clearance => true, :count => 1}
+
       new_cart << hash
     else
       current_item[:count] += 1
