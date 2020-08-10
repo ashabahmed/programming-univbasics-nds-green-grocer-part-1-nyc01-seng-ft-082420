@@ -15,12 +15,12 @@ end
 # cart = [{:item => "KALE", :price => 3.00, :clearance => false}]
 def consolidate_cart(cart)
   new_cart = []
-  binding.pry
+
   cart.each do |hash|
-    if find_item_by_name_in_collection(hash[:item], new_cart)
+    if find_item_by_name_in_collection(hash[:item], new_cart) == nil
       new_cart << hash
     end
-    binding.pry
+
   end
   # Consult README for inputs and outputs
   #
