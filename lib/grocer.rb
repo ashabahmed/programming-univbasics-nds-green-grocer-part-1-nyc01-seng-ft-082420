@@ -15,6 +15,7 @@ end
 # cart = [{:item => "KALE", :price => 3.00, :clearance => false}]
 def consolidate_cart(cart)
   new_cart = [{:item => "AVOCADO", :price => 3.00, :clearance => true, :count => 1},
+  {:item => "AVOCADO", :price => 3.00, :clearance => true, :count => 2}
     {:item => "KALE", :price => 3.00, :clearance => false, :count => 1}
   ]
   
@@ -29,6 +30,7 @@ def consolidate_cart(cart)
       hash[:count] = 1
       new_cart << hash
     else
+      
       {:item => "AVOCADO", :price => 3.00, :clearance => true, :count => 1}[:count] += 1
     end
 
