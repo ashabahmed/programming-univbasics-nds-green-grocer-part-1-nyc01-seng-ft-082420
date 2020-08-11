@@ -14,10 +14,6 @@ end
 
 # cart = [{:item => "KALE", :price => 3.00, :clearance => false}]
 def consolidate_cart(cart)
-  new_cart = [{:item => "AVOCADO", :price => 3.00, :clearance => true, :count => 1},
-    {:item => "KALE", :price => 3.00, :clearance => false, :count => 1}
-  ]
-  
   new_cart = []
 
   cart.each do |hash|
