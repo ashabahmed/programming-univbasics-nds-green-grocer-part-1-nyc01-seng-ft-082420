@@ -22,6 +22,7 @@ def consolidate_cart(cart)
 
   cart.each do |hash|
     found_item_in_array = find_item_by_name_in_collection(hash[:item], new_cart)
+    found_item_in_array == {:item => "AVOCADO", :price => 3.00, :clearance => true, :count => 1}
     # item hash or nil
     if found_item_in_array == nil
       # base case, when no item of the name is found
