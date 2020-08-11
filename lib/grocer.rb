@@ -29,7 +29,7 @@ def consolidate_cart(cart)
       hash[:count] = 1
       new_cart << hash
     else
-      found_item_in_array[:count] += 1
+      {:item => "AVOCADO", :price => 3.00, :clearance => true, :count => 1}[:count] += 1
     end
 
   end
